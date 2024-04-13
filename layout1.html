@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+        body{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 3px;
+            flex: 1 1 100vw;
+            
+        }
+        header{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            padding: 100px;
+            align-items: center;
+            margin: 3px;
+            flex: 1 1 100vw;
+            background-color: rgb(87, 87, 87);
+        }
+        nav{
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            margin: 3px;
+            flex: 1 1 100vw;
+            background-color: rgb(87, 87, 87);
+        }
+        h1{
+            font-size: 52px;
+        }
+        ul{
+            display: flex;
+            margin: 3px;
+            padding: 10px;
+        }
+        li{
+            padding: 10px;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            margin: 3px;
+            flex: 1 1 100vw;
+            background-color: rgb(87, 87, 87);
+        }
+        aside{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+            margin: 3px;
+            flex: 1 1 100vw;
+            background-color: rgb(87, 87, 87);
+        }
+        .all-div{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            margin: auto;
+            
+        }
+        footer{
+            display: flex;
+            margin: 3px;
+            padding: 20px;
+            justify-content: center;
+            flex: 1 1 100vw;
+            background-color: rgb(87, 87, 87);
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        li{
+            list-style-type: none;
+        }
+        img{
+            width: 500px;
+            height: auto;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .p-main{
+            margin-left: 200px;
+            margin-right: 200px;
+            margin-bottom: 10px;
+        }
+        .h2-main, .h2-aside{
+            font-size: 40px;
+            margin: 10px;
+        }
+        .div-1, .div-2, .div-3, .div-4{
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            border: 1px solid orange;
+            text-align: center;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Meu primeiro layout</h1>
+        </div>
+        <br>
+        <div>
+            <p>Testando maneiras de usar o flexbox...</p>
+        </div>
+        
+    </header>
+    <nav>
+        <ul>
+            <a href=""><li>Home</li></a>
+            <a href=""><li>Sobre</li></a>
+            <a href=""><li>Contacto</li></a>
+        </ul>
+    </nav>
+    <main>
+        <h2 class="h2-main">Conteúdo Principal</h2>
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="">
+        <p class="p-main">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    </main>
+    <aside>
+        <h2 class="h2-aside">Conteúdo Relacionado</h2>
+        <div class="all-div">
+            <div class="div-1">1</div>
+            <div class="div-2">2</div>
+            <div class="div-3">3</div>
+            <div class="div-3">4</div>
+        </div>
+        
+    </aside>
+    <footer>Desenvolvido por Ana Morais - 2024</footer>
+</body>
+</html>
